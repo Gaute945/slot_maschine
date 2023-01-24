@@ -4,13 +4,13 @@ import os
 import subprocess
 import time
 
-
+# function to check if input is a number
 def is_number(value):
     if isinstance(value, str):
         return value.isdigit()
     return isinstance(value, (int, float))
 
-
+# delay for visual effects
 delay = 2      
 
 # boot
@@ -22,7 +22,6 @@ wallet = random_number = random.randint(1, 100)
 print("current wallet amount {}".format(wallet))
 
 while True:
-
     # bet amount
     spent = input("How Much To Bet one, two Or four. ")
     if spent in ["1", "2", "4"]:
@@ -44,6 +43,7 @@ while True:
     spin2 = random_number = random.randint(1, 10)
     spin3 = random_number = random.randint(1, 10)
     
+    # payout calculation
     if spin1 == 10:
         payout1 = spent * 3
     else:
@@ -56,7 +56,7 @@ while True:
         payout3 = spent * 3
     else:
         payout3 = 0
-
+    
     # show result (slots icons)
     time.sleep(1)
     if spin1 == 10:
@@ -94,5 +94,7 @@ while True:
 
 # flashing colors
 # arcade sound
-
+# highscore for length
+# highscore for amount won
 # jackpot
+# wallet can be zero but not negative
