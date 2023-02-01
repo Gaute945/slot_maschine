@@ -11,7 +11,7 @@ def is_number(value):
     return isinstance(value, (int, float))
 
 #* delay for visual effects
-delay = 2      
+delay = 2
 
 #* boot
 tprint("Emoji_machine")
