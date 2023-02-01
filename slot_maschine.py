@@ -4,32 +4,32 @@ import os
 import subprocess
 import time
 
-# function to check if input is a number
+#* function to check if input is a number
 def is_number(value):
     if isinstance(value, str):
         return value.isdigit()
     return isinstance(value, (int, float))
 
-# delay for visual effects
+#* delay for visual effects
 delay = 2      
 
-# boot
+#* boot
 tprint("Emoji_machine")
 
-# insert wallet
+#* insert wallet
 wallet = random_number = random.randint(1, 100)
-# input("Insert Valid Amount of coins ... ")
+#* input("Insert Valid Amount of coins ... ")
 print("current wallet amount {}".format(wallet))
 
 while True:
-    # bet amount
+    #* bet amount
     spent = input("How Much To Bet one, two Or four. ")
     if spent in ["1", "2", "4"]:
         bool(True)
     else:
         exit()
 
-    # Convert the spent value to an integer
+    #* Convert the spent value to an integer
     spent = int(spent)
 
     if wallet > spent:
@@ -38,12 +38,12 @@ while True:
         print("Insufficient Funds. (Wallet Cannot Be Zero)")
         exit()
 
-    # spin
+    #* spin
     spin1 = random_number = random.randint(1, 10)
     spin2 = random_number = random.randint(1, 10)
     spin3 = random_number = random.randint(1, 10)
     
-    # payout calculation
+    #* payout calculation
     if spin1 == 10:
         payout1 = spent * 3
     else:
@@ -57,7 +57,7 @@ while True:
     else:
         payout3 = 0
     
-    # show result (slots icons)
+    #* show result (slots icons)
     time.sleep(1)
     if spin1 == 10:
         print("{}".format(spin1))
@@ -74,7 +74,7 @@ while True:
     else:
         print(spin3)
 
-    # payout
+    #* payout
     payout = payout1 + payout2 + payout3
     
     if payout > 0:
@@ -88,7 +88,7 @@ while True:
     
     wallet = payout + wallet
 
-    # show wallet
+    #* show wallet
     print("current wallet amount {}".format(wallet))
     continue
 
@@ -100,4 +100,9 @@ highscore for length
 highscore for amount won
 ?jackpot
 wallet can be zero but not negative
+!
+?
+//
+todo
+*
 """
