@@ -92,9 +92,12 @@ while True:
     print("current wallet amount {}".format(wallet))
     continue
 
-# flashing colors
-# arcade sound
-# highscore for length
-# highscore for amount won
-# jackpot
-# wallet can be zero but not negative
+"""
+ todo
+ flashing colors
+ arcade sound
+ highscore for length
+ highscore for amount won
+ jackpot
+ wallet can be zero but not negative
+"""
