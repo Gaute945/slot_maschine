@@ -42,7 +42,6 @@ while True:
     spin1 = random_number = random.randint(1, 10)
     spin2 = random_number = random.randint(1, 10)
     spin3 = random_number = random.randint(1, 10)
-    
     #* payout calculation
     if spin1 == 10:
         payout1 = spent * 3
@@ -105,4 +104,5 @@ wallet can be zero but not negative
 //
 todo
 *
+FIXME:
 """
