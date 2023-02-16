@@ -11,6 +11,7 @@ flashing colors
 arcade sound
 highscore for length
 highscore for amount won
+database for amount house has won
 ?jackpot
 !wallet can be zero but not negative
 """
@@ -38,7 +39,9 @@ print("\033[43mcurrent wallet amount {}\033[0m".format(wallet))
 
 while True:
     # * bet amount
-    spent = input("How Much To Bet \033[41m one \033[0m, \033[43m two \033[0m Or \033[42m four \033[0m. ")
+    spent = input(
+        "How Much To Bet \033[41m one \033[0m, \033[43m two \033[0m Or \033[42m four \033[0m. "
+    )
     if spent in ["1", "2", "4"]:
         bool(True)
     else:
@@ -67,24 +70,24 @@ while True:
     else:
         payout2 = 0
     if spin3 == 10:
-        payout3 = spent * 3
+        payout3 = spent * 4
     else:
         payout3 = 0
 
     # * show result (slots icons)
     time.sleep(1)
     if spin1 == 10:
-        print("{}".format(spin1))
+        print("\u001b[32m{}\u001b[0m".format(spin1))
     else:
         print(spin1)
     time.sleep(2)
     if spin2 == 10:
-        print("{}".format(spin2))
+        print("\u001b[32m{}\u001b[0m".format(spin2))
     else:
         print(spin2)
     time.sleep(3)
     if spin3 == 10:
-        print("{}".format(spin3))
+        print("\u001b[32m{}\u001b[0m".format(spin3))
     else:
         print(spin3)
 
@@ -94,14 +97,12 @@ while True:
     if payout > 0:
         print("Your payout is ... ", end=" ")
         time.sleep(3)
-        print("{}".format(payout))
+        print("\u001b[32m{}\u001b[0m".format(payout))
     else:
-        print("Your payout is ... ", end=" ")
-        time.sleep(3)
-        print(payout)
+        pass
 
     wallet = payout + wallet
 
     # * show wallet
-    print("current wallet amount {}".format(wallet))
-    continue
+    print("current wallet amount \u001b[32m{}\u001b[0m".format(wallet))
+    
