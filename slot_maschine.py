@@ -85,19 +85,19 @@ while True:
     # * show result (slots icons)
     time.sleep(1)
     if spin1 == 10:
-        print("\u001b[32m{}\u001b[0m".format(spin1))
+        print("\U0001F911")
     else:
-        print(spin1)
+        print("\U0001F62D")
     time.sleep(2)
     if spin2 == 10:
-        print("\u001b[32m{}\u001b[0m".format(spin2))
+        print("\U0001F911")
     else:
-        print(spin2)
+        print("\U0001F62D")
     time.sleep(3)
     if spin3 == 10:
-        print("\u001b[32m{}\u001b[0m".format(spin3))
+        print("\U0001F911")
     else:
-        print(spin3)
+        print("\U0001F62D")
 
     # * payout
     payout = payout1 + payout2 + payout3
