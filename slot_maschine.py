@@ -105,7 +105,7 @@ while True:
     else:
         pass
         
-    time.sleep(2)
+    time.sleep(1.5)
     
     if spin2 == 10:
         print("\U0001F911")
