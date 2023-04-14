@@ -5,16 +5,6 @@ import time
 
 from art import tprint
 
-"""
-todo:
-//colors
-arcade sound
-*highscore for length
-highscore for amount won
-database for amount house has won
-?jackpot
-"""
-
 # * function to check if input is a number
 def is_number(value):
     if isinstance(value, str):
