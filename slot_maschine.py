@@ -33,7 +33,7 @@ while True:
     
     # * bet amount
     spent = input(
-        "Bet \033[41m one \033[0m, \033[43m two \033[0m Or \033[42m four \033[0m. "
+        "Bet \033[41m 1 \033[0m, \033[43m 2 \033[0m Or \033[42m 4 \033[0m. "
     )
     if spent in ["1", "2", "4"]:
         bool(True)
